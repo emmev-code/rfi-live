@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Monitor Treni (stazioni Italiane)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>🚆 Monitor Treni (stazioni Italiane)</h1>
+    </header>
+    <main>
+        <form id="formStazione">
+            <label for="stazione">Stazione:</label>
+            <select id="stazione" name="stazione">
+                <option value="">Caricamento in corso...</option>
+            </select>
+
+            <label for="tipo">Tipo:</label>
+            <select id="tipo" name="tipo">
+                <option value="true">Arrivi</option>
+                <option value="false">Partenze</option>
+            </select>
+
+            <button type="submit">Carica</button>
+        </form>
+        <table id="tabellaDati">
+            <thead>
+                <tr>
+                    <th>Treno</th>
+                    <th>Provenienza/Destinazione</th>
+                    <th>Orario</th>
+                    <th>Ritardo (minuti)</th>
+                    <th>Binario</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabella"></tbody>
+        </table>
+    </main>
+    <footer>
+        <p>Copyright (C) 2025 EmmeV. Tutti i diritti riservati. - <a href="https://github.com/emmev-code/rfi-live" target="_blank">Codice Sorgente</a></p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
